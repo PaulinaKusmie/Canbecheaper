@@ -10,10 +10,14 @@ workflows:
       - name: Set gradlew permissions
         script: |
           chmod +x $CM_BUILD_DIR/gradlew
+      - name: Check available tasks
+        script: |
+          cd $CM_BUILD_DIR
+          ./gradlew :shared:tasks | grep -i xcframework
       - name: Set up KMP shared framework
         script: |
           cd $CM_BUILD_DIR
-          ./gradlew :shared:assembleReleaseXCFramework
+          ./gradlew :shared:assembleSharedReleaseXCFramework
       - name: Build iOS
         script: |
           cd $CM_BUILD_DIR/iosApp
