@@ -13,20 +13,5 @@ workflows:
       - name: Check available tasks
         script: |
           cd $CM_BUILD_DIR
-          ./gradlew :shared:tasks | grep -i xcframework
-      - name: Set up KMP shared framework
-        script: |
-          cd $CM_BUILD_DIR
-          ./gradlew :shared:assembleSharedReleaseXCFramework
-      - name: Build iOS
-        script: |
-          cd $CM_BUILD_DIR/iosApp
-          xcodebuild \
-            -project iosApp.xcodeproj \
-            -scheme iosApp \
-            -sdk iphonesimulator \
-            -configuration Debug \
-            -derivedDataPath DerivedData \
-            CODE_SIGNING_ALLOWED=NO
-    artifacts:
-      - iosApp/DerivedData/**/*.app
+          ./gradlew :shared:tasks --all 2>&1 | grep -i "xcframework" || echo "Brak xcframework tasks"
+          ./gradlew :shared:tasks --all 2>&1 | grep -i "assemble" || echo "Brak assemble tasks"
