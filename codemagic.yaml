@@ -1,5 +1,25 @@
 workflows:
-  hello-world:
-    name: Hello world workflow
+  ios-workflow:
+    name: iOS Build
+    max_build_duration: 60
+    instance_type: mac_mini_m2
+    environment:
+      xcode: latest
+      cocoapods: default
     scripts:
-      - echo "Hello World!"
+      - name: Set up KMP shared framework
+        script: |
+          cd $CM_BUILD_DIR
+          ./gradlew :shared:assembleReleaseXCFramework
+      - name: Build iOS
+        script: |
+          cd $CM_BUILD_DIR/iosApp
+          xcodebuild \
+            -project iosApp.xcodeproj \
+            -scheme iosApp \
+            -sdk iphonesimulator \
+            -configuration Debug \
+            -derivedDataPath DerivedData \
+            CODE_SIGNING_ALLOWED=NO
+    artifacts:
+      - iosApp/DerivedData/**/*.app
