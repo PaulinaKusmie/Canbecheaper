@@ -10,7 +10,7 @@ import io.ktor.http.*
 import io.ktor.serialization.kotlinx.json.*
 import kotlinx.serialization.json.Json
 
-private const val BASE_URL = "http://srv18.mikr.us:20230/"
+private const val BASE_URL = "*******"
 
 fun createHttpClient(): HttpClient = HttpClient {
 
