@@ -14,11 +14,11 @@ count: `pcs`, `pack`
 🔍 Product search – quickly find any saved product
 ---
 🖼️ Screenshots
-<img width="1080" height="2400" alt="Screenshot_20260601_214207" src="https://github.com/user-attachments/assets/eb44a00e-52a4-45e0-abee-d40e7c110d28" />
-<img width="1080" height="2400" alt="Screenshot_20260601_230925" src="https://github.com/user-attachments/assets/cb0b8a00-b183-4e38-84ab-f727ab1b4582" />
-<img width="1080" height="2400" alt="Screenshot_20260601_230911" src="https://github.com/user-attachments/assets/3bc6fde1-bff6-4010-9d3f-4d7584cc6263" />
-<img width="1080" height="2400" alt="Screenshot_20260601_230855" src="https://github.com/user-attachments/assets/cfc3cc3c-d1ee-45dd-8fc1-045556dd3e95" />
-<img width="1080" height="2400" alt="Screenshot_20260601_230749" src="https://github.com/user-attachments/assets/789319fc-c72d-4a6c-aaf6-839c747b75b3" />
+<img width="540" height="1200" alt="Screenshot_20260601_214207" src="https://github.com/user-attachments/assets/eb44a00e-52a4-45e0-abee-d40e7c110d28" />
+<img width="540" height="1200" alt="Screenshot_20260601_230925" src="https://github.com/user-attachments/assets/cb0b8a00-b183-4e38-84ab-f727ab1b4582" />
+<img width="540" height="1200" alt="Screenshot_20260601_230911" src="https://github.com/user-attachments/assets/3bc6fde1-bff6-4010-9d3f-4d7584cc6263" />
+<img width="540" height="1200" alt="Screenshot_20260601_230855" src="https://github.com/user-attachments/assets/cfc3cc3c-d1ee-45dd-8fc1-045556dd3e95" />
+<img width="540" height="1200" alt="Screenshot_20260601_230749" src="https://github.com/user-attachments/assets/789319fc-c72d-4a6c-aaf6-839c747b75b3" />
 
 ---
 🛠️ Tech Stack
